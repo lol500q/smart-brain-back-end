@@ -34,7 +34,6 @@ app.get('/', (req, res)=> { res.send(db.users) })
 app.post('/signin', (req,res)=>{signin.handleSignin(req,res,db, bcrypt)})
 app.post('/register', (req, res) => { register.handleRegister(req, res, db, bcrypt) })
 app.get('/profile/:id', (req, res) => { profile.handleProfile(req, res, db)})
-app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)})
 bcrypt.hash("bacon", null, null, function(err, hash) {
     // Store hash in your password DB.
 });
