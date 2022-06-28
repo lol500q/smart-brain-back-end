@@ -11,7 +11,7 @@ const { handleSignin } = require('./controllers/signin');
 const db=knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-metric-50934',
       port : 5432,
       user : 'postgres',
       password : 'brain123@',
